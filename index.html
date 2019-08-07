@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC - Survey Form</title>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+    <header id="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore odit repudiandae officiis natus. Dicta, nobis? Aliquam, quidem aperiam adipisci maxime unde veniam facere et. Sunt architecto veniam laborum in id.</p>
+    </header>
+
+    <main id="main">
+        <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+            
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="name" id="name-label">* Name: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" autofocus required>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="email" id="email-label">* Email: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" autofocus required>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="age" id="number-label">* Age: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" name="age" id="number" class="input-field" placeholder="Age" min="1" max="125">
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="marital-status">Marital Status: </label>
+                </div>
+                <div class="rightTab">
+                    <select name="marital-status" id="dropdown" class="dropdown">
+                        <option disabled value selected>What's your marital status? </option>
+                        <option value="married">Married</option>
+                        <option value="single">Single</option>
+                        <option value="divorced">Divorced</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="age-range">Age Range: </label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none;">
+                        <li class="radio">
+                            <label>
+                                less than 18 
+                                <input type="radio" name="age-radio" class="ratings" value="1">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                18 to 35 
+                                <input type="radio" name="age-radio" class="ratings" value="2">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                35 and above 
+                                <input type="radio" name="age-radio" class="ratings" value="3">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="social-media">What Social Media Apps are You On?(Choose all that apply): </label>
+                </div>
+                <div class="rightTab">
+                    <ul id="social-media" style="list-style: none;">
+                        <li class="checkbox">
+                            <label>
+                                Facebook
+                                <input type="checkbox" name="media" class="ratings" value="1">
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                Instagram
+                                <input type="checkbox" name="media" class="ratings" value="1">
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                Twitter
+                                <input type="checkbox" name="media" class="ratings" value="1">
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                LinkedIn
+                                <input type="checkbox" name="media" class="ratings" value="1">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer id="footer">
+        <p>Designed by Patrick Ndifon</p>
+    </footer>
+</body>
+</html>
